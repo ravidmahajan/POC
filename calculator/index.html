@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>
+        Calculator
+    </title>
+</head>
+<body>
+    <main>
+      <form name="calc">
+        <input type="text" name="input" value=0>
+        <div class="keys">
+            <input type="button" class="op__key" onclick="calc.input.value = ''" op="clear" value="C"/>
+            <input type="button" class="op__key" op="negate" onclick="calc.input.value += '-'" value="-"/>
+            <input type="button" class="op__key" op="percent" onclick="calc.input.value = eval(calc.input.value * 0.01)" value="%"/>
+            <input type="button" class="op__key" op="divide" onclick="calc.input.value += '/'" value="/"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '7'" value="7" />
+            <input type="button" class="num__key"  onclick="calc.input.value += '8'" value="8"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '9'" value="9"/>
+            <input type="button" class="op__key" op="multiply" onclick="calc.input.value += '*'" value="*"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '4'" value="4"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '5'" value="5"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '6'" value="6"/>
+            <input type="button" class="op__key" op="subtract" onclick="calc.input.value += '-'"value="-"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '1'" value="1"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '2'" value="2"/>
+            <input type="button" class="num__key"  onclick="calc.input.value += '3'" value="3"/>
+            <input type="button" class="op__key"  onclick="calc.input.value += '+'" op="add" value="+"/>
+            <span></span>
+            <input type="button" class="num__key"  onclick="calc.input.value += '0'" value="0"/>
+            <input type="button" class="num__key"onclick="calc.input.value += '.'" value="."/>
+            <input type="button" class="eq__key" onclick="calc.input.value = eval(calc.input.value)" value="="/>
+        </div>
+    </main>
+</body>
+
+</html>
